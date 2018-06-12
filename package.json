@@ -1,0 +1,30 @@
+{
+  "name": "test-task-idap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/oxyyyyy/test-task-IDAP.git",
+  "author": "Alexandr Vlasenko <olexandr.vlasenko@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oxyyyyy/test-task-IDAP/issues"
+  },
+  "homepage": "https://github.com/oxyyyyy/test-task-IDAP#readme",
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "uikit": "^3.0.0-rc.5"
+  }
+}

@@ -5,13 +5,12 @@
 @import 'table'
 @import 'left-nav'
 @import 'top-nav'
+@import 'search-and-add-table-panel'
 
 // Custom styles of default components
 @import 'scroll'
 
 // Common styles
-body
-	overflow: hidden
 ul
 	list-style-type: none
 	padding: 0
@@ -24,11 +23,12 @@ a
 a, i
 	transition: $main_transition_prop
 .common-page
-	font-size: 15px
-	height: 100vh
+	font-size: 14px
 	background-color: #ebeff3
-	padding-top: $top_menu_height
-	padding-left: $left_menu_height
+	padding-top: $top_menu_height + 45px
+	padding-bottom: 45px
+	padding-right: 30px
+	padding-left: $left_menu_height + 30px
 	@media only screen and (max-width: 1440px)
 		font-size: 14px
 	@media only screen and (max-width: 1024px)

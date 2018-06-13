@@ -8,7 +8,16 @@
 .database-table-container
 	background-color: #fff
 	box-shadow: $light_shadow_prop
+.database-table__thead
+	tr
+		th
+			color: $font_color
+			font-weight: 700
 .database-table__tr
+	&:nth-of-type(odd)
+		background-color: #f8f8f899 !important
+	&:hover
+		background-color: rgba(57, 139, 247, 0.15) !important
 	td:first-child
 		position: relative
 		&::before

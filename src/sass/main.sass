@@ -1,16 +1,35 @@
+// Variables
 @import 'vars'
+
+// Style modules
 @import 'table'
 @import 'left-nav'
+@import 'top-nav'
 
+// Custom styles of default components
+@import 'scroll'
+
+// Common styles
 body
-	background-color: #999
 	overflow: hidden
-	// height: 100vh
 ul
 	list-style-type: none
 	padding: 0
 a
 	color: $font_color
+	transition: $main_transition_prop
 	&:hover
 		text-decoration: none
 		color: $font_color
+a, i
+	transition: $main_transition_prop
+.common-page
+	font-size: 15px
+	height: 100vh
+	background-color: #ebeff3
+	padding-top: $top_menu_height
+	padding-left: $left_menu_height
+	@media only screen and (max-width: 1440px)
+		font-size: 14px
+	@media only screen and (max-width: 1024px)
+		font-size: 12px

@@ -4,11 +4,13 @@
 	position: absolute
 	top: 0
 	left: 0
+	z-index: 500
+	min-width: 260px
 	background-color: #fff
-	font-size: 14px
+	font-size: 1em
 	font-weight: 500
 	height: 100vh
-	overflow-y: scroll
+	overflow-y: auto
 	box-shadow: $main_shadow_prop
 .left-nav__logo
 	font-size: 22px
@@ -18,38 +20,42 @@
 	display: flex
 	justify-content: flex-start
 	align-items: center
-	padding: 10px 25px
+	padding: 5px 25px
 	margin-bottom: 15px
 	box-shadow: $main_shadow_prop
+	&:hover
+		color: #fff !important
+		background-color: $accent_color
+		i
+			color: #fff
 	i
 		margin-right: 10px
 		color: $accent_color
 .left-nav__ul
 	margin: 0
 	margin-bottom: 15px
-	padding: 10px 25px 10px 50px
-	&:last-child
-		margin-bottom: 0
 .left-nav__category-icon
 	position: absolute
-	top: 5px
-	left: -28px
+	top: 9px
+	left: 22px
 .left-nav__category-title
 	text-transform: uppercase
 	color: $accent_color
-	font-size: 16px
+	font-size: 1.2em
 	position: relative
 .left-nav__category-li
 	display: flex
 	text-transform: capitalize
 .left-nav__category-link
 	width: 100%
-	transition: $main_transition_prop
 	&:hover
 		background-color: $accent_color
 		color: #fff !important
-.left-nav__category-title, .left-nav__category-li
-	margin-bottom: 5px
+.left-nav__category-link--active
+	background-color: $accent_color
+	color: #fff !important
+.left-nav__category-title, .left-nav__category-link
+	padding: 5px 25px 5px 50px
 .left-nav__category-link
 	color: $font_color
 	&:hover
